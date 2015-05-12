@@ -23,7 +23,7 @@ Move into the myProject folder, and test the project:
 ~~~
 %> cd myProject
 ~~~
-Open **pom.xml** and makit look like below. [It's a bug, which will be fixed in next release.](https://github.com/GraphWalker/graphwalker-project/commit/31343c31219c9ad835502be7bed4dc3830116ca6)
+Open **pom.xml** and add plugin section, so it looks like below. [It's a bug, which will be fixed in next release.](https://github.com/GraphWalker/graphwalker-project/commit/31343c31219c9ad835502be7bed4dc3830116ca6)
 ~~~
      <build>
          <plugins>
