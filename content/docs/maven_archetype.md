@@ -23,13 +23,24 @@ Move into the myProject folder, and test the project:
 ~~~
 %> cd myProject
 ~~~
-Open **pom.xml** and change: (It's a bug, which will be fixed in next release.)
+Open **pom.xml** and makit look like below. [It's a bug, which will be fixed in next release.](https://github.com/GraphWalker/graphwalker-project/commit/31343c31219c9ad835502be7bed4dc3830116ca6)
 ~~~
-<graphwalker.version>3.2.0-SNAPSHOT</graphwalker.version>
-~~~
-to
-~~~
-<graphwalker.version>3.2.1</graphwalker.version>
+     <build>
+         <plugins>
+             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                 <groupId>org.graphwalker</groupId>
+                 <artifactId>graphwalker-maven-plugin</artifactId>
+                 <version>${graphwalker.version}</version>
+
 ~~~
 Now, run a test:
 ~~~
