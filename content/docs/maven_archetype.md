@@ -153,61 +153,64 @@ When running the the test the output might look something like this:
 [INFO] Building GraphWalker Example 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] >>> graphwalker-maven-plugin:3.0.1-SNAPSHOT:test (default-cli) @ myProject >>>
+[INFO] >>> graphwalker-maven-plugin:3.3.0:test (default-cli) @ myProject >>>
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:validate-models (default-cli) @ myProject ---
+[INFO] --- graphwalker-maven-plugin:3.3.0:validate-models (default-cli) @ myProject ---
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:generate-sources (default-cli) @ myProject ---
-[INFO] Reflections took 679 ms to scan 30 urls, producing 1830 keys and 6753 values 
-[INFO] Generate /tmp/krikar/myProject/src/main/resources/com/company/SmallTest.graphml
+[INFO] --- graphwalker-maven-plugin:3.3.0:generate-sources (default-cli) @ myProject ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 [INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myProject ---
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ myProject ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 1 resource
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ myProject ---
-[INFO] Compiling 2 source files to /tmp/krikar/myProject/target/classes
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/krikar/Downloads/tmp/myProject/target/classes
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:generate-test-sources (generate-test-sources) @ myProject ---
+[INFO] --- graphwalker-maven-plugin:3.3.0:generate-test-sources (generate-test-sources) @ myProject ---
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:validate-test-models (default-cli) @ myProject ---
+[INFO] --- graphwalker-maven-plugin:3.3.0:validate-test-models (default-cli) @ myProject ---
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:generate-test-sources (default-cli) @ myProject ---
+[INFO] --- graphwalker-maven-plugin:3.3.0:generate-test-sources (default-cli) @ myProject ---
 [INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myProject ---
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ myProject ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /tmp/krikar/myProject/src/test/resources
+[INFO] skip non existing resourceDirectory /home/krikar/Downloads/tmp/myProject/src/test/resources
 [INFO] 
-[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ myProject ---
-[INFO] No sources to compile
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myProject ---
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
-[INFO] <<< graphwalker-maven-plugin:3.0.1-SNAPSHOT:test (default-cli) @ myProject <<<
+[INFO] <<< graphwalker-maven-plugin:3.3.0:test (default-cli) @ myProject <<<
 [INFO] 
-[INFO] --- graphwalker-maven-plugin:3.0.1-SNAPSHOT:test (default-cli) @ myProject ---
+[INFO] --- graphwalker-maven-plugin:3.3.0:test (default-cli) @ myProject ---
 [INFO] ------------------------------------------------------------------------
 [INFO]   _____             _   _ _ _     _ _                                   
 [INFO]  |   __|___ ___ ___| |_| | | |___| | |_ ___ ___                         
 [INFO]  |  |  |  _| .'| . |   | | | | .'| | '_| -_|  _|                        
 [INFO]  |_____|_| |__,|  _|_|_|_____|__,|_|_,_|___|_|                          
-[INFO]                |_|         (3.0.1-SNAPSHOT)                            
+[INFO]                |_|         (3.3.0)                            
 [INFO] ------------------------------------------------------------------------
-[INFO] Reflections took 476 ms to scan 45 urls, producing 2102 keys and 7620 values 
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 [INFO] Configuration:
 [INFO]     Include = [*]
 [INFO]     Exclude = []
 [INFO]      Groups = [*]
 [INFO] 
 [INFO] Tests:
-[INFO]     SomeSmallTest(RandomPath, EdgeCoverage, 100)
+[INFO]     SomeSmallTest(RandomPath, VertexCoverage, 100)
 [INFO] 
 [INFO] ------------------------------------------------------------------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
 Running: e_FirstAction
 Running: v_VerifySomeAction
 Running: e_AnotherAction
-Running: v_VerifySomeOtherAction
-Running: e_SomeOtherAction
-Running: v_VerifySomeOtherAction
-Running: e_SomeOtherAction
 Running: v_VerifySomeOtherAction
 Running: e_SomeOtherAction
 Running: v_VerifySomeOtherAction
@@ -226,8 +229,8 @@ Running: v_VerifySomeAction
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.995s
-[INFO] Finished at: Fri Sep 26 16:21:37 CEST 2014
-[INFO] Final Memory: 37M/444M
+[INFO] Total time: 5.013s
+[INFO] Finished at: Tue May 12 13:36:06 CEST 2015
+[INFO] Final Memory: 30M/552M
 [INFO] ------------------------------------------------------------------------
 ~~~
