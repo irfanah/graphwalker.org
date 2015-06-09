@@ -5,6 +5,7 @@ Description: Contact page for GraphWalker
 
 ## Contacts
 
+* Questions regarding GraphWalker are put directy to the <a href="https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/graphwalker-3"> GraphWalker 3 group</a>. 
 * [Nils Olsson](https://github.com/nilols)
 * [Kristian Karl](https://github.com/KristianKarl)
 
